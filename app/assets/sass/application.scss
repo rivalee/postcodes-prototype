@@ -34,7 +34,7 @@
 }
 
 .service-links {
-  margin-top: $gutter*5;
+  margin-top: $gutter*3;
 }
 
 .postcode-form {
@@ -49,5 +49,54 @@
   margin-top: $gutter;
 }
 
+.button-get-started {
+  background-image: url(https://assets.digital.cabinet-office.gov.uk/static/icon-pointer-2x-f0001d9660ac92fe11e98c679066515a.png);
+  background-size: 30px 19px;
+}
+
+.input[type="text"], input[type="search"] {
+  font-family: "nta",Arial,sans-serif;
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  border: 1px solid #bbb;
+  min-width: 8em;
+  margin: 0 0.5em 0 0;
+  padding: 0.3em;
+}
+
+.input[type="streetname"]  {
+  font-family: "nta",Arial,sans-serif;
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  border: 1px solid #bbb;
+  width: 12em;
+  margin: 0 0.5em 0 0;
+  padding: 0.3em;
+}
+
+.find-nearest {
+  background-color: #dee0e2;
+min-height: 2em;
+line-height: 2;
+margin: 2em 0;
+padding: 1em 2em 1em 1em;
+position: relative;
+}
+
+
+.find-where-i-am {
+  display: inline-block;
+  background-color: #dee0e2;
+min-height: 1.5em;
+min-width: 60%;
+line-height: 1.25;
+margin-bottom: -2em;
+padding: 0.5em 1em 0.5em 1em;
+position: relative;
+}
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
