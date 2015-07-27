@@ -1,6 +1,44 @@
 function ShowHideContent() {
   var self = this;
 
+  self.showHideradioToggledContent = function () {
+
+    $(".block-label input[type='radio']").each(function() {
+
+      var $radio = $(this);
+      var $radioLabel = $(this).parent();
+
+      var $dataTarget = $radioLabel.attr('data-target');
+
+      // Add ARIA attributes
+
+      // If the data-target attribute is defined
+      if (typeof $dataTarget !== 'undefined' && $dataTarget !== false) {
+
+        // Set aria-controls
+        $radio.attr('aria-controls', $dataTarget);
+
+        // Set aria-expanded and aria-hidden
+        $radio.attr('aria-expanded', 'false');
+        $('#'+$dataTarget).attr('aria-hidden', 'true');
+
+        // For radioes revealing hidden content
+        $radio.on('click', function() {
+
+          var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+
+          // Toggle hidden content
+          $('#'+$dataTarget).toggle();
+
+          // Update aria-expanded and aria-hidden attributes
+          $(this).attr('aria-expanded', state);
+          $('#'+$dataTarget).attr('aria-hidden', !state);
+
+        });
+      }
+    });
+  }
+
 
   self.escapeElementName = function(str) {
     result = str.replace('[', '\\[').replace(']', '\\]')
@@ -72,44 +110,6 @@ function ShowHideContent() {
 
     });
   }
-  self.showHideCheckboxToggledContent = function () {
-
-    $(".block-label input[type='checkbox']").each(function() {
-
-      var $checkbox = $(this);
-      var $checkboxLabel = $(this).parent();
-
-      var $dataTarget = $checkboxLabel.attr('data-target');
-
-      // Add ARIA attributes
-
-      // If the data-target attribute is defined
-      if (typeof $dataTarget !== 'undefined' && $dataTarget !== false) {
-
-        // Set aria-controls
-        $checkbox.attr('aria-controls', $dataTarget);
-
-        // Set aria-expanded and aria-hidden
-        $checkbox.attr('aria-expanded', 'false');
-        $('#'+$dataTarget).attr('aria-hidden', 'true');
-
-        // For checkboxes revealing hidden content
-        $checkbox.on('click', function() {
-
-          var state = $(this).attr('aria-expanded') === 'false' ? true : false;
-
-          // Toggle hidden content
-          $('#'+$dataTarget).toggle();
-
-          // Update aria-expanded and aria-hidden attributes
-          $(this).attr('aria-expanded', state);
-          $('#'+$dataTarget).attr('aria-hidden', !state);
-
-        });
-      }
-
-    });
-  }
 }
 
 $(document).ready(function() {
@@ -128,9 +128,7 @@ $(document).ready(function() {
   // Where .block-label uses the data-target attribute
   // to toggle hidden content
   var toggleContent = new ShowHideContent();
-  toggleContent.showHideRadioToggledContent();
-  toggleContent.showHideCheckboxToggledContent();
-
+  toggleContent.showHideradioToggledContent();
 });
 
 $(window).load(function() {
@@ -152,45 +150,4 @@ $(window).load(function() {
       $(".error input:first").focus();
     }
   }
-
-  self.showHideradioToggledContent = function () {
-
-    $(".block-label input[type='radio']").each(function() {
-
-      var $radio = $(this);
-      var $radioLabel = $(this).parent();
-
-      var $dataTarget = $radioLabel.attr('data-target');
-
-      // Add ARIA attributes
-
-      // If the data-target attribute is defined
-      if (typeof $dataTarget !== 'undefined' && $dataTarget !== false) {
-
-        // Set aria-controls
-        $radio.attr('aria-controls', $dataTarget);
-
-        // Set aria-expanded and aria-hidden
-        $radio.attr('aria-expanded', 'false');
-        $('#'+$dataTarget).attr('aria-hidden', 'true');
-
-        // For radioes revealing hidden content
-        $radio.on('click', function() {
-
-          var state = $(this).attr('aria-expanded') === 'false' ? true : false;
-
-          // Toggle hidden content
-          $('#'+$dataTarget).toggle();
-
-          // Update aria-expanded and aria-hidden attributes
-          $(this).attr('aria-expanded', state);
-          $('#'+$dataTarget).attr('aria-hidden', !state);
-
-        });
-      }
-
-    });
-  }
-
-
 });
