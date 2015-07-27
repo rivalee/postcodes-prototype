@@ -20,20 +20,45 @@ Local government links
 
 		<p>First we need to find your local council, by using the area you live in.</p>
 
-						<div class="find-where-i-am">
-							<h2 class="heading-small">Search by street name and city</h2>
-						<input class="input" name="streetname" id="full-name-f1" placeholder="eg Cato Road, London" type="text">   <button class="button">Find</button></a>
-					</div>
-
-						<h3 class="heading-medium">Or&hellip;</h3>
-
-						<div class="find-where-i-am">
-										<a href="no-postcode">	<h2 class="heading-small">Find where I am right now</a></h2>
-										<p>Use your computer's current location</p>
-										</div>
 
 
+		  <fieldset>
+		    <legend>
+		      <span class="form-label-bold">
+		        What is your nationality?
+		      </span>
+		    </legend>
+		    <p>
+		      Select all options that are relevant to you.
+		    </p>
+		    <div class="form-group form-group-compound">
+
+					<label class="block-label" for="city" data-target="street-name">
+						<input id="city" type="checkbox" value="Citizen of a different country">
+						Street name and city
+					</label>
+				</div>
+
+				<div class="panel-indent js-hidden" id="street-name">
+					<label class="form-label" for="street-name-city">eg Cato Road, London</label>
+					<input class="form-control" type="text" id="street-name-city">
+					<p>
+					<button class="button">Find</button></p>
+				</div>
+
+
+				<label class="block-label" for="find-me" data-target="find-computer">
+					<input id="find-me" type="checkbox" value="Citizen of a different country">
+					Find my current location
+				</label>
+			<div class="panel-indent js-hidden" id="find-computer">
+				<p>
+				<button class="button">Find</button></p>
 </div>
+		  </fieldset>
+</div>
+
+
 	<div class="column-third">
 
 
@@ -68,6 +93,18 @@ Local government links
 
 
 </main>
+
+<script src="/public/javascripts/govuk-template.js?0.13.0" type="text/javascript"></script>
+
+<script src="/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+
+<!-- govuk_frontend_toolkit js -->
+<script src="/public/javascripts/vendor/polyfills/bind.js"></script>
+<script src="/public/javascripts/govuk/selection-buttons.js"></script>
+
+<!-- govuk_elements js -->
+<script src="/public/javascripts/vendor/details.polyfill.js"></script>
+<script src="/public/javascripts/application.js"></script>
 
 {{/content}}
 
