@@ -13,56 +13,67 @@ Local government links
 		<div class="back">
 		<p><a href="pay-council-tax">Back</a></p>
 	</div>
-		<p>	<h1 class="heading-xlarge">Pay council tax</h1>
+		<p>	<h1 class="heading-xlarge">Pay your Council Tax</h1>
 
 		<p>Pay Council Tax online or by other methods such as direct debit.</p>
 		<h2 class="heading-medium">Find my local area</h2>
 
+		<p>First we need to find your local council, by using the area you live in.</p>
+
 		<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
 
-<p>	<span class="heading-medium" id="error-summary-heading-example-2">
-		There was a problem with your postcode
-	</span></p>
+		<p>	<span class="heading-medium" id="error-summary-heading-example-2">
+				There was a problem with your postcode
+			</span></p>
 
-	<p>
-		Try checking your postcode and entering it again.
-	</p>
+			<p>
+				Try checking your postcode and entering it again.
+			</p>
+
+			<h2 class="heading-small">Find by postcode</h2>
+
+				<label class="form-label" for="full-name-f1">Enter full postcode (UK only)</label>
+				<input class="input" id="postcode" name="postcode" type="text" placeholder="eg SE3 7UE">
+				<a href="start-now-simple"> <button class="button">Find</button></a>
 
 
 
+
+
+		</div>
+
+
+
+
+		<h2 class="heading-small">Find by place</h2>
+		    <div class="form-group form-group-compound">
+
+					<label class="block-label" for="city" data-target="street-name">
+						<input id="city" type="radio" name="method" value="Citizen of a different country">
+						Street name and city
+					</label>
+				</div>
+
+				<div class="panel-indent js-hidden" id="street-name">
+					<label class="form-label" for="street-name-city">eg Cato Road, London</label>
+					<input class="form-control" type="text" id="street-name-city">
+					<p>
+					<a href="start-now-simple2"><button class="button">Find</button></p></a>
+				</div>
+
+
+				<label class="block-label" for="find-me" data-target="find-computer">
+					<input id="find-me" type="radio" name="method" value="Citizen of a different country">
+					Find my current location
+				</label>
+			<div class="panel-indent js-hidden" id="find-computer">
+				<p>
+				<a href="start-now-simple3"><button class="button">Find</button></p></a>
+</div>
+		  </fieldset>
 </div>
 
-<div class="form-group error">
 
-	<label for="example-full-name" id="error-full-name">
-
-		<span class="form-label-bold">Postcode</span>
-		<span class="error-message" id="error-message-full-name">Enter your full postcode (UK only)</span>
-
-	</label>
-</br>
-	<input class="form-control" id="example-full-name" type="text" name="fullName" value="" aria-describedby="error-message-full-name">
-	<input class="button" type="submit" value="Find">
-
-</div>
-
-
-				<p>We can also find your area using one of the following:</p>
-
-						<div class="find-where-i-am">
-							<h2 class="heading-small">Search by street name and city</h2>
-						<input class="input" name="streetname" id="full-name-f1" placeholder="eg Cato Road, London" type="text">   <button class="button">Find</button></a>
-					</div>
-
-						<h3 class="heading-medium">Or&hellip;</h3>
-
-						<div class="find-where-i-am">
-										<a href="no-postcode">	<h2 class="heading-small">Find where I am right now</a></h2>
-										<p>Use your computer's current location</p>
-										</div>
-
-
-</div>
 	<div class="column-third">
 
 
@@ -97,6 +108,16 @@ Local government links
 
 
 </main>
+
+<script src="/public/javascripts/govuk-template.js?0.13.0" type="text/javascript"></script>
+
+
+<!-- govuk_frontend_toolkit js -->
+<script src="/public/javascripts/vendor/polyfills/bind.js"></script>
+<script src="/public/javascripts/govuk/selection-buttons.js"></script>
+
+<!-- govuk_elements js -->
+<script src="/public/javascripts/application.js"></script>
 
 {{/content}}
 

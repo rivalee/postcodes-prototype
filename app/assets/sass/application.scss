@@ -37,6 +37,26 @@
   margin-top: $gutter*3;
 }
 
+.service-links ul {
+  font-family: "nta",Arial,sans-serif;
+font-size: 16px;
+line-height: 1.25;
+font-weight: 400;
+text-transform: none;
+list-style: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+.service-links li {
+  margin-bottom: 0.75em;
+}
+
+.service-links li.related-topic a {
+    display: inline;
+    font-weight: bold;
+}
 .postcode-form {
   margin-top: $gutter*2;
 }
