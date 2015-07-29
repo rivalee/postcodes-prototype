@@ -34,7 +34,7 @@
 }
 
 .service-links {
-  margin-top: $gutter*3;
+  margin-top: $gutter*1;
 }
 
 .service-links ul {
@@ -109,14 +109,9 @@ position: relative;
 
 
 .find-where-i-am {
-  display: inline-block;
-  background-color: #dee0e2;
-min-height: 1.5em;
-min-width: 60%;
 line-height: 1.25;
-margin-bottom: -2em;
-padding: 0.5em 1em 0.5em 1em;
 position: relative;
+margin: 2em 0 2em 0;
 }
 
 .find-v2 {
@@ -143,5 +138,29 @@ position: relative;
   margin-top: -5px;
   width: 300px;
 }
+
+#global-breadcrumb ol {
+    max-width: 960px;
+    margin: 0 30px;
+    padding: 0.75em 0;
+
+}
+
+#global-breadcrumb ol li {
+    font-family: "nta",Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-cdeb08166e771d0c630c018110044965.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    padding-right: 1em;
+  }
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
