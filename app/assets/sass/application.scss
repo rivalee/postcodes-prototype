@@ -162,5 +162,11 @@ margin: 2em 0 2em 0;
     margin-bottom: 0.4em;
     padding-right: 1em;
   }
+
+  .city-options {
+    display: inline-block;
+    clear: right;
+  }
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
