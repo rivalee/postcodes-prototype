@@ -61,8 +61,13 @@ overflow: hidden;
   margin-top: $gutter*2;
 }
 
+.geolocate {
+  clear: right;
+}
+
+
 .no-postcode {
-  margin-top: $gutter;
+  display: inline-block;
 }
 
 .back {
@@ -81,7 +86,7 @@ overflow: hidden;
   font-weight: 400;
   text-transform: none;
   border: 1px solid #bbb;
-  min-width: 8em;
+  width: 10em;
   margin: 0 0.5em 0 0;
   padding: 0.3em;
 }
@@ -112,6 +117,8 @@ position: relative;
 line-height: 1.25;
 position: relative;
 margin: 2em 0 2em 0;
+background: $grey-3;
+padding: 10px 10px 5px 20px;
 }
 
 .find-v2 {
@@ -166,6 +173,10 @@ margin: 2em 0 2em 0;
   .city-options {
     display: inline-block;
     clear: right;
+  }
+
+  .geo-icon {
+    padding-right: 5px;
   }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
