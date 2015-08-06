@@ -10,68 +10,44 @@ Local government links
 
 	<div class="grid-row">
 	<div class="column-two-thirds">
-		<div class="back">
-		<p><a href="pay-council-tax">Back</a></p>
-	</div>
 		<p>	<h1 class="heading-xlarge">Pay your Council Tax</h1>
 
-
-		<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
-
-		<p>	<span class="heading-medium" id="error-summary-heading-example-2">
-				There was a problem with your postcode </br>
-
-				(SE3 77UE)</span>
-				<p>
-				Check your postcode and entering it again, or use the other options to find your local area.
-				</p>
-			</div>
+		<p>Pay Council Tax online or by other methods such as direct debit.</p>
 
 
+		<h2 class="heading-large">Find your local council</h2>
 
 
+				<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
 
-				<label class="form-label" for="full-name-f1">Enter full postcode (UK only)</label>
-				<input class="input" id="postcode" name="postcode" type="text" placeholder="eg SE3 7UE">
-				<a href="start-now-simple"> <button class="button">Find</button></a>
+				<p>	<span class="heading-medium" id="error-summary-heading-example-2">
+						There was a problem with your postcode </br>
 
+						(SE3 77UE)</span>
+						<p>
+						Check your postcode for mistakes and try entering it again, or <a href="start-now-simple3">use your current location</a>.
+						</p>
+					</div>
 
+<div class="find-where-i-am">
+		<p><span class="heading-medium">Enter your full postcode (UK only)</span></p>
+<p>If you don't have a full postcode, you can try entering a partial postcode (eg SE3) for a list of councils</p>
+		  <input class="input" id="postcode" name="postcode" type="text" placeholder="eg SE3 7UE or SE3">
+			<a href="start-now-simple"> <button class="button">Find</button></a>
 
-
-
-
-
-
-
-		<h2 class="heading-small">Find by place</h2>
-		    <div class="form-group form-group-compound">
-
-					<label class="block-label" for="city" data-target="street-name">
-						<input id="city" type="radio" name="method" value="Citizen of a different country">
-						Street name and city
-					</label>
-				</div>
-
-				<div class="panel-indent js-hidden" id="street-name">
-					<label class="form-label" for="street-name-city">eg Cato Road, London</label>
-					<input class="form-control" type="text" id="street-name-city">
-					<p>
-					<a href="start-now-simple2"><button class="button">Find</button></p></a>
-				</div>
+			<a href="no-postcode-error">&nbsp;</a>
 
 
-				<label class="block-label" for="find-me" data-target="find-computer">
-					<input id="find-me" type="radio" name="method" value="Citizen of a different country">
-					Find my current location
-				</label>
-			<div class="panel-indent js-hidden" id="find-computer">
-				<p>
-				<a href="start-now-simple3"><button class="button">Find</button></p></a>
-</div>
-		  </fieldset>
-</div>
+	</div>
 
+	<div class="geolocate">
+	<div class="no-postcode">
 
+	<p>	<a href="start-now-simple3"><!--<img src="public/images/geolocate.png" width="22px">-->
+	<span class="heading-medium">Use your location to find your local council</p></a>
+		</div>
+	</div>
+	</div>
 	<div class="column-third">
 
 
@@ -106,16 +82,6 @@ Local government links
 
 
 </main>
-
-<script src="/public/javascripts/govuk-template.js?0.13.0" type="text/javascript"></script>
-
-
-<!-- govuk_frontend_toolkit js -->
-<script src="/public/javascripts/vendor/polyfills/bind.js"></script>
-<script src="/public/javascripts/govuk/selection-buttons.js"></script>
-
-<!-- govuk_elements js -->
-<script src="/public/javascripts/application.js"></script>
 
 {{/content}}
 

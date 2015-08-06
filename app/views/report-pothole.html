@@ -26,109 +26,64 @@ Local government links
 
 		<p>	<h1 class="heading-xlarge">Report a pothole</h1>
 
-		<p>Potholes and damaged roads can be dangerous for motorists and cyclists.</p>
+		<p>Potholes and damaged roads can be dangerous for motorists and cyclists. Report potholes to the local council.</p>
 
-		<h2 class="heading-medium">Find my local council</h2>
+		<h2 class="heading-large">Find a local council</h2>
 
-		<p>First we need to find your local council by using your current area.</p>
+	<div class="find-where-i-am">
+		<p><span class="heading-medium">Enter a full postcode (UK only)</span></p>
+	<p>If you don't have a full postcode, you can try entering a partial postcode (eg SE3) for a list of councils</p>
+			<input class="input" id="postcode" name="postcode" type="text" placeholder="eg SE3 7UE or SE3">
+			<a href="start-now-simple"> <button class="button">Find</button></a>
 
-<div class="find-where-i-am">
+			<a href="no-postcode-error">&nbsp;</a>
 
-				<fieldset>
-					<legend>
-						<span class="form-label-bold">
-						</span>
-					</legend>
-
-					<div class="form-group form-group-compound">
-
-						<label class="block-label" for="postcode" data-target="whole-postcode">
-							<input id="postcode" type="radio" name="method" value="Citizen of a different country">
-							Postcode</label>
-
-					<div class="panel-indent js-hidden" id="whole-postcode">
-						<label class="form-label" for="street-name-city">eg SE3 7UE</label>
-						<input class="form-control" type="text" id="street-name-city">
-						<p><a href="start-now-simple3"><button class="button">Find</button></p></a>
-					</div>
-
-						<label class="block-label" for="city" data-target="street-name">
-							<input id="city" type="radio" name="method" value="Citizen of a different country">
-							Street name and city
-						</label>
-
-					<div class="panel-indent js-hidden" id="street-name">
-						<label class="form-label" for="street-name-city">eg Cato Road, London</label>
-						<input class="form-control" type="text" id="street-name-city">
-
-						<p>
-						<a href="city-list"><button class="button">Find</button></p></a>
-					</div>
-
-
-
-
-					<label class="block-label" for="find-me" data-target="find-computer">
-						<input id="find-me" type="radio" name="method" value="Citizen of a different country">
-						Find my current location</label>
-
-				<div class="panel-indent js-hidden" id="find-computer">
-					<p>
-					<a href="start-now-simple3"><button class="button">Find</button></p></a>
-				</div>
-
-
-
-				</fieldset>
 
 	</div>
 
+	<div class="geolocate">
+	<div class="no-postcode">
+
+	<p>	<a href="start-now-simple3"><!--<img src="public/images/geolocate.png" width="22px">-->
+	<span class="heading-medium">Use your location to find a local council</p></a>
+		</div>
+	</div>
 	</div>
 	<div class="column-third">
 
 
 		<div class="service-links">
 
-
-			<div class="inner group related-subsection">
-
-<h2 class="heading-medium">Recycling, rubbish, streets and roads</h2>
+			<h2 class="heading-medium">Council Tax</h2>
 
 
-<nav role="navigation" aria-labelledby="parent-subsection">
-	<ul>
+						<ul><li>
+									<a href="/council-tax">Council Tax</a>
+								</li>
 
-			<li>
-				<a href="/claim-compensation-injury-road-pavement">Claim compensation for injuries caused by roads or pavements</a>
-			</li>
+								<li>
+									<a href="/council-tax-bands">Check your Council Tax band</a>
+								</li>
 
-			<li>
-				<a href="/report-problem-pavement">Report a problem with a pavement</a>
-			</li>
+								<li>
+									<a href="/council-tax-reduction">Council Tax Reduction</a>
+								</li>
 
 
-			<li class="related-topic"><a href="/browse/housing-local-services/recycling-rubbish">More <span class="visuallyhidden">in Recycling, rubbish, streets and roads</span></a></li>
+								<li class="related-topic"><a href="/browse/housing-local-services/council-tax">More <span class="visuallyhidden">in Council Tax</span></a></li>
 
-	</ul>
-</nav>
-</div>
-
-			            </ul>
-			          </nav>
-			        </div>
-
-            </ul></nav>
-</div>
+						</ul></nav>
+	</div>
 
 	</div>
-</div>
+	</div>
 
 
 
 
 
-</main>
+	</main>
 
-{{/content}}
+	{{/content}}
 
-{{/layout}}
+	{{/layout}}
